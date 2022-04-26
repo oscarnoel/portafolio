@@ -1,0 +1,189 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+
+    
+    margin-top: 15px;
+    margin: 0px;
+
+
+}
+
+html{
+    height: 100%;   
+
+    background: #12c2e9;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #f64f59, #c471ed, #12c2e9);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #f64f59, #c471ed, #12c2e9); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+.contenedor{
+
+    margin-left: auto;
+    margin-right: auto;    
+ 
+
+    width: 100%;
+    height: 100%;
+
+    overflow: visible;
+    background-color: transparent;   
+ 
+}
+
+.portada{
+    height:40rem;
+    width: 100%;
+    background-image: url(programacion.jpg);
+    background-repeat: round;    
+    
+
+    object-fit: contain;
+
+}
+
+.portada #foto-mia{
+    position: relative;
+    z-index: 7;
+    top: 430px;
+
+    left: 50%;
+    margin-left: -100px;
+    height:200px;
+    width: 200px;
+        overflow: hidden;
+   
+     -moz-border-radius: 50%;
+     -webkit-border-radius: 50%;
+     border-radius: 50%;
+    background-color: transparent;
+}
+
+
+.cajatexto2{
+   
+    width: 100%;
+    
+    padding-bottom: 20px;
+
+}
+
+.center{
+    width: 90%;
+    max-width: 1200px;
+    height: auto;
+    background: white;  /* fallback for old browsers */
+
+    
+    
+    
+
+    margin-left: auto;
+    margin-right: auto;
+
+    padding-top: 20px;
+  
+}
+
+
+
+.contactos{
+
+ 
+    
+
+    margin-left: auto;
+    margin-right: auto;
+    height: auto; 
+    width: 100%; /*Quito el scroll*/  
+    max-width: fit-content;
+
+    margin-bottom: 30px;
+
+    overflow: hidden;  /*Quita ese bug del height*/
+
+    background-color: transparent;
+}
+
+
+.caja{
+
+    float: left;
+
+    height: 130px;  
+    width: 150px;
+
+    padding: 1%;
+ 
+
+    border-radius: 6px;
+    /* border-color: #656668; */
+    border-width: 3px;
+    border-style: solid;
+   
+}
+
+
+
+#github{
+     background-color: gray;
+     border-color: #656668;
+}
+
+
+
+#whatsapp{
+    background-color: #25D326;
+    border-color: #70ce41;
+}
+
+#facebook{
+    background-color: #2d4774;
+    border-color: #3b5998;
+}
+
+.trabajos-lista{
+    position: relative;
+
+    width: 80%;
+    height: 20rem;
+
+    margin-left: auto;
+    margin-right: auto;
+  
+
+    background-color: transparent;
+}
+
+.trabajos-lista .trabajo-1{
+    position: relative;
+
+    background-color: transparent;
+}
+
+@media screen and (max-width: 563px){
+    .cajatexto2{
+           
+        padding-bottom: 0px;
+    
+    }
+
+
+.center{
+        width: 100%;
+}
+
+    
+.caja{
+
+    height: 90px;  
+    width: 90px;
+
+}
+
+    
+}
+
