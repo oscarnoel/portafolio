@@ -14,22 +14,15 @@ body{
 html{
     height: 100%;   
 
-    background: #12c2e9;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #f64f59, #c471ed, #12c2e9);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #f64f59, #c471ed, #12c2e9); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
 }
 
 .contenedor{
-
-    margin-left: auto;
-    margin-right: auto;    
  
-
     width: 100%;
     height: 100%;
 
-    overflow: visible;
+    overflow: auto;
     background-color: transparent;   
  
 }
@@ -38,10 +31,8 @@ html{
     height:40rem;
     width: 100%;
     background-image: url(programacion.jpg);
-    background-repeat: round;    
-    
-
-    object-fit: contain;
+    background-repeat: no-repeat;    
+    background-size: cover;
 
 }
 
@@ -72,28 +63,21 @@ html{
 }
 
 .center{
-    width: 90%;
-    max-width: 1200px;
-    height: auto;
+    width: 100%;
     background: white;  /* fallback for old browsers */
 
-    
-    
-    
 
     margin-left: auto;
     margin-right: auto;
 
     padding-top: 20px;
+    padding-bottom: 20px;
   
 }
 
 
 
 .contactos{
-
- 
-    
 
     margin-left: auto;
     margin-right: auto;
@@ -148,32 +132,109 @@ html{
 .trabajos-lista{
     position: relative;
 
-    width: 80%;
-    height: 20rem;
+    width: 100%;
+    max-width: 1900px;
+    height: 50rem;
 
+    overflow: auto;
+
+    padding-top: 20px;
     margin-left: auto;
     margin-right: auto;
   
 
+    background-color: green;
+}
+
+.trabajos-lista .buscador{
+    
+    
+    
+    margin-left: auto;
+    margin-right: auto;
+    
+    
+    width: 100%;
+    height: 6rem;
+
     background-color: transparent;
+
+}
+
+.css-input {
+    
+    width: 70%;
+    height: 100%;
+    margin-left: 20px;
+
+    padding: 7px;
+    font-size: 2rem;
+    border-width: 1px;
+    border-color: #1c1b1b;
+    background-color: #ffffff;
+    color: #000000;
+    border-style: solid;
+    border-radius: 0px;
+    box-shadow: 0px 6px 2px rgba(66,66,66,.91);
+
+}
+.css-input:focus {
+    outline:none;
 }
 
 .trabajos-lista .trabajo-1{
-    position: relative;
-
+    
     background-color: transparent;
 }
+.myButton {
+    position: relative;
+    bottom: 5px;
 
-@media screen and (max-width: 563px){
-    .cajatexto2{
+    width: 20%;
+    height: 100%;
+    margin-left: 35px;
+
+
+
+	box-shadow:inset 0px 1px 0px 0px #ffffff;
+	background:linear-gradient(to bottom, #ffffff 5%, #f6f6f6 100%);
+	background-color:#ffffff;
+	border-radius:6px;  
+	border:1px solid #dcdcdc;
+	cursor:pointer;
+	color:#666666;
+	font-family:Arial;
+	font-size:22px;
+	font-weight:bold;
+	padding:6px 24px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #ffffff;
+}
+.myButton:hover {
+	background:linear-gradient(to bottom, #f6f6f6 5%, #ffffff 100%);
+	background-color:#f6f6f6;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}
+
+
+
+        
+
+
+@media screen and (max-width: 720px){
+.cajatexto2{
            
         padding-bottom: 0px;
     
-    }
+}
 
 
 .center{
         width: 100%;
+
 }
 
     
@@ -184,6 +245,26 @@ html{
 
 }
 
+.trabajos-lista .buscador{
+        
+    width: 100%;
+    height: 6rem;
+
+   
+}
+
+
+.css-input {
+    margin-left: 10px;
+    width: 60%;
+}
+
+.myButton {
+    padding:6px;
+ width: 30%;
+ margin-left: 10px;
+
+}
     
 }
 
