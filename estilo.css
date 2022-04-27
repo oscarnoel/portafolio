@@ -44,7 +44,7 @@ html{
     left: 50%;
     margin-left: -100px;
     height:200px;
-    width: 200px;
+       width: 200px;
         overflow: hidden;
    
      -moz-border-radius: 50%;
@@ -83,7 +83,8 @@ html{
     margin-right: auto;
     height: auto; 
     width: 100%; /*Quito el scroll*/  
-    max-width: fit-content;
+    max-width: 500px;
+
 
     margin-bottom: 30px;
 
@@ -143,15 +144,14 @@ html{
     margin-right: auto;
   
 
-    background-color: green;
+    background-color:   transparent;
 }
 
 .trabajos-lista .buscador{
     
-    
-    
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 45px;
     
     
     width: 100%;
@@ -181,11 +181,6 @@ html{
 .css-input:focus {
     outline:none;
 }
-
-.trabajos-lista .trabajo-1{
-    
-    background-color: transparent;
-}
 .myButton {
     position: relative;
     bottom: 5px;
@@ -197,32 +192,99 @@ html{
 
 
 	box-shadow:inset 0px 1px 0px 0px #ffffff;
-	background:linear-gradient(to bottom, #ffffff 5%, #f6f6f6 100%);
-	background-color:#ffffff;
+	background-color:linear-gradient(to bottom, #ffffff 5%, #f6f6f6 100%);
 	border-radius:6px;  
 	border:1px solid #dcdcdc;
 	cursor:pointer;
 	color:#666666;
 	font-family:Arial;
 	font-size:22px;
-	font-weight:bold;
 	padding:6px 24px;
 	text-decoration:none;
-	text-shadow:0px 1px 0px #ffffff;
+
+    
+    outline: none;
 }
-.myButton:hover {
-	background:linear-gradient(to bottom, #f6f6f6 5%, #ffffff 100%);
-	background-color:#f6f6f6;
-}
+
 .myButton:active {
 	position:relative;
 	top:1px;
 }
 
-
-
+.trabajos-lista .scroll-trabajos{
+    width: 95%;    
+    height: auto;    
+    
+        margin-right: auto;
+        margin-left: auto;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        padding-left: 10%;
+       
         
+        overflow: hidden;
+    background-color: #6699cc;
+}
 
+.scroll-trabajos .trabajo-construye{
+    margin-right: 70px;
+    margin-bottom: 50px;
+
+    width: 300px;
+    height: 280px;
+
+    background-image: url(bannerhtml.jpg);
+    background-repeat: no-repeat;
+    background-position: center;    
+    background-size: cover;
+
+ 
+
+    background-color: #fff;
+    border-radius: 5px;
+
+    float: left;
+    overflow: hidden;
+}
+
+.trabajo-construye header{
+    position: relative;
+    top: 30px;
+    left: -20px;
+    width: 60%;
+
+
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.2rem;
+    color: white;
+
+    padding: 1rem;
+    text-align: right;
+
+    background-color: lightskyblue  ;
+    border-radius: 10px;
+
+}
+
+.trabajo-construye .titulo{
+    position: relative;
+    top: 50px;
+
+    margin-left: auto;
+    margin-right: auto;
+
+    text-align: center;
+    font-size: 2rem;
+    font-family: 'Roboto Slab', serif;
+
+    padding: 0.2em;
+
+    width: 75%;
+    height: auto;
+
+    background-color: gray;
+
+}
 
 @media screen and (max-width: 720px){
 .cajatexto2{
@@ -237,7 +299,12 @@ html{
 
 }
 
-    
+.contactos{
+
+    max-width: 310px;
+
+}    
+
 .caja{
 
     height: 90px;  
